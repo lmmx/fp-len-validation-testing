@@ -8,5 +8,5 @@ Development on [issue 8308][issue] on the Pydantic repo
 
 ## Usage
 
-- This repo is a `uv` workspace, the PR fork of Pydantic is a workspace member in `packages` (a git subrepo, code not co-included). Install the workspace and all dependencies with `uv pip install .`
+- This repo is a `uv` workspace, the PR fork of Pydantic is a workspace member under `packages/` as a git subrepo (code not co-included). Install the workspace and all dependencies with `uv pip install .`
 - Run the examples as standalone scripts or run the tests (`pytest tests`)
