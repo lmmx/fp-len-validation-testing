@@ -8,6 +8,6 @@ class Unrealistic(BaseModel):
 try:
     Unrealistic(path="x" * 1000)
 except ValidationError as ve:
-    pass
+    pass  # Too long
 except OSError:
     raise RuntimeError("This should not raise an OSError")
