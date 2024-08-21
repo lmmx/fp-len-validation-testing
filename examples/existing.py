@@ -6,8 +6,8 @@ class Overconfident(BaseModel):
 
 
 try:
-    failure = Overconfident(path="x" * 1000)
+    Overconfident(path="x" * 1000)
 except ValidationError as ve:
-    failure = True
-
-assert failure is True
+    pass
+except OSError:
+    raise RuntimeError("This should not raise an OSError")

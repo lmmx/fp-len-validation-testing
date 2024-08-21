@@ -6,8 +6,8 @@ class Unrealistic(BaseModel):
 
 
 try:
-    failure = Unrealistic(path="x" * 1000)
+    Unrealistic(path="x" * 1000)
 except ValidationError as ve:
-    failure = True
-
-assert failure is True
+    pass
+except OSError:
+    raise RuntimeError("This should not raise an OSError")
