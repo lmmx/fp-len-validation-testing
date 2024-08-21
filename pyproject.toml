@@ -1,7 +1,7 @@
 [project]
 name = "fp-len-validation-testing"
 version = "0.1.0"
-description = "Add your description here"
+description = "Development on issue 8308 on the Pydantic repo: File path length validation (NewPath)"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
