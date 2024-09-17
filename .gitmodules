@@ -1,0 +1,4 @@
+[submodule "packages/8308-file-path-length-validation"]
+    path = packages/8308-file-path-length-validation
+    url = https://github.com/lmmx/pydantic
+    branch = lmmx/8308-file-path-length-validation
